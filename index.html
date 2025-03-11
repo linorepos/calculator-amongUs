@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora Among Us</title>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" id="screen" class="display" />
+
+      <div class="buttons">
+        <input type="button" value="1" onclick="addElement('1')" class="btn" />
+        <input type="button" value="2" onclick="addElement('2')" class="btn" />
+        <input type="button" value="3" onclick="addElement('3')" class="btn" />
+        <input type="button" value="+" onclick="addElement('+')" class="btn" />
+        <input type="button" value="4" onclick="addElement('4')" class="btn" />
+        <input type="button" value="5" onclick="addElement('5')" class="btn" />
+        <input type="button" value="6" onclick="addElement('6')" class="btn" />
+        <input type="button" value="-" onclick="addElement('-')" class="btn" />
+        <input type="button" value="7" onclick="addElement('7')" class="btn" />
+        <input type="button" value="8" onclick="addElement('8')" class="btn" />
+        <input type="button" value="9" onclick="addElement('9')" class="btn" />
+        <input type="button" value="*" onclick="addElement('*')" class="btn" />
+        <input type="button" value="=" onclick="calculate()" class="btn" />
+        <input type="button" value="0" onclick="addElement('0')" class="btn" />
+        <input type="button" value="C" onclick="clearScreen()" class="btn" />
+        <input type="button" value="/" onclick="addElement('/')" class="btn" />
+      </div>
+      <audio
+        id="buttonSound"
+        src="./resources/sounds/buttons_sound.mp3"
+      ></audio>
+      <audio
+        id="backgroundMusic"
+        src="./resources/sounds/among_us_ambience.mp3"
+        autoplay
+        loop
+      ></audio>
+    </div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
